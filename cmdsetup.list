@@ -1,0 +1,17 @@
+sudo apt install ghostty  "theme = Black Metal"
+
+
+//PRISM LAUNCHER
+sudo apt update && sudo apt install -y flatpak && flatpak remote-add --if-not-exists flathub https://flathub.org && flatpak install -y flathub org.prismlauncher.PrismLauncher
+
+
+
+//SPOTIFY
+curl -sS https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo apt install spotify-client
+
+
+//STEAM
+sudo add-apt-repository multiverse && sudo apt update && sudo apt install steam
