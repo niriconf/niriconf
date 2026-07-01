@@ -15,3 +15,4 @@ sudo apt install spotify-client
 
 //STEAM
 sudo add-apt-repository multiverse && sudo apt update && sudo apt install steam
+
